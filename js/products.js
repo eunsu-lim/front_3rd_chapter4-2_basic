@@ -10,7 +10,8 @@ function displayProducts(products) {
     const container = document.querySelector('#all-products .container');
 
    
-    // Iterate over each product and create the HTML structure safely
+    // test
+    // Iterate over each product and create the HTML structure safely 
     products.forEach(product => {
         // Create the main product div
         const productElement = document.createElement('div');
