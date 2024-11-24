@@ -1,6 +1,4 @@
 
-
-
 body {
     margin: 0;
     font-family: 'Heebo';
@@ -234,7 +232,9 @@ section.best-sellers .product-slider .product {
 
 section.best-sellers .product-slider .product img {
     max-width: 40%;
-    aspect-ratio: 1 / 1; 
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
 }
 
 section.best-sellers .product-slider .product .product-picture {
