@@ -9,8 +9,6 @@ function displayProducts(products) {
     // Find the container where products will be displayed
     const container = document.querySelector('#all-products .container');
 
-   
-    // test
     // Iterate over each product and create the HTML structure safely 
     products.forEach(product => {
         // Create the main product div
