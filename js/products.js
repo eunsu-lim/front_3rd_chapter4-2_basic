@@ -2,15 +2,10 @@ async function loadProducts() {
     const response = await fetch("https://fakestoreapi.com/products");
     const products = await response.json();
     
-    const chunkSize = 1000;
+    const chunkSize = 1000; 
     for (let i = 0; i < products.length; i += chunkSize) {
         const chunk = products.slice(i, i + chunkSize);
-        await new Promise(resolve => {
-            requestAnimationFrame(() => {
-                displayProducts(chunk);
-                resolve();
-            });
-        });
+        displayProducts(chunk); 
     }
 }
 
@@ -47,7 +42,7 @@ async function heavyCalculation() {
     await new Promise(resolve => {
         setTimeout(() => {
             for (let i = 0; i < 10000000; i++) {
-                const temp = Math.sqrt(i) * Math.sqrt(i);
+                Math.sqrt(i); 
             }
             resolve();
         }, 0);
@@ -57,7 +52,7 @@ async function heavyCalculation() {
 
 async function runTasks() {
     await loadProducts();
-    await heavyCalculation();
+    await heavyCalculation(); 
 }
 
-runTasks();
+document.addEventListener('DOMContentLoaded', runTasks);
