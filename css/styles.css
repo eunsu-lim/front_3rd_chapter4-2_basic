@@ -13,6 +13,12 @@ body {
     
 }
 
+img {
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
 
 ul {
     margin: 0;
@@ -232,9 +238,7 @@ section.best-sellers .product-slider .product {
 
 section.best-sellers .product-slider .product img {
     max-width: 40%;
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: contain;
+    aspect-ratio: 1 / 1; 
 }
 
 section.best-sellers .product-slider .product .product-picture {

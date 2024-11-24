@@ -1,7 +1,7 @@
 async function loadProducts() {
     const response = await fetch("https://fakestoreapi.com/products");
     const products = await response.json();
-    // 1000개 단위로 쪼개서 처리
+    
     const chunkSize = 1000;
     for (let i = 0; i < products.length; i += chunkSize) {
         const chunk = products.slice(i, i + chunkSize);
