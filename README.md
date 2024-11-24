@@ -65,21 +65,21 @@
 
 #### 개선 후 향상된 지표
 
-![Alt text](image-2.png)
+![Alt text](image-4.png)
 
 - 개선 후 성능 측정
 
 |Metrics|측정값|
 |------|---|
 |FCP|0.7 s|
-|LCP|2.4 s|
+|LCP|1.7 s|
 |TBT|0 ms|
 |CLS|0.001|
 |Speed Index|0.7 s|
 
 
   - First Contentful Paint (FCP): 2.4s에서 0.7s로 약 70% 감소
-  - Largest Contentful Paint (LCP): 11.0s에서 2.4s로 약 78% 감소
+  - Largest Contentful Paint (LCP): 11.0s에서 1.7s로 약 78% 감소
   - Total Blocking Time (TBT): 610ms에서 0ms로 감소
   - Cumulative Layout Shift (CLS): 0.011에서 0.001로 약 90% 감소
   - Speed Index: 2.4s에서 0.7s로 감소
