@@ -54,8 +54,8 @@
    - loading="lazy" 속성 추가
    - 이미지 width, height 속성 추가
    - 각 높이가 다른 경우 css에 aspect-ratio 속성 추가 
+   - webp로 변환
 - JavaScript 최적화
-   - 스크립트 로딩 지연 (import 시 defer 속성 추가)
    - js 파일 async로 비동기 처리
 - 리소스 로딩 최적화
    - 폰트 로딩 최적화 (preload)
@@ -64,23 +64,22 @@
 
 
 #### 개선 후 향상된 지표
-
-![Alt text](image-4.png)
+  
+![Alt text](image-5.png)
 
 - 개선 후 성능 측정
 
 |Metrics|측정값|
 |------|---|
-|FCP|0.7 s|
-|LCP|1.7 s|
+|FCP|0.2 s|
+|LCP|0.7 s|
 |TBT|0 ms|
-|CLS|0.001|
-|Speed Index|0.7 s|
+|CLS|0.003|
+|Speed Index|0.4 s|
 
 
-  - First Contentful Paint (FCP): 2.4s에서 0.7s로 약 70% 감소
-  - Largest Contentful Paint (LCP): 11.0s에서 1.7s로 약 78% 감소
+  - First Contentful Paint (FCP): 2.4s에서 0.2s로 감소
+  - Largest Contentful Paint (LCP): 11.0s에서 0.7s로 감소
   - Total Blocking Time (TBT): 610ms에서 0ms로 감소
-  - Cumulative Layout Shift (CLS): 0.011에서 0.001로 약 90% 감소
-  - Speed Index: 2.4s에서 0.7s로 감소
-  
+  - Cumulative Layout Shift (CLS): 0.011에서 0.003로 감소
+  - Speed Index: 2.4s에서 0.4s로 감소
